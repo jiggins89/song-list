@@ -6,7 +6,15 @@ import { selectSong } from "../actions";
 import SongList from "./SongList";
 
 const App = () => {
-  return <SongList />;
+  return (
+    <div className="ui grid container">
+      <div className="row">
+        <div className="eight wide column">
+          <SongList />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default App;
